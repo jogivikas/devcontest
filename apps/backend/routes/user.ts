@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { client } from "db/client";
-import { SignupSchema } from "../types";
+import { SignupSchema } from "../types.ts";
 import jwt, { type JwtPayload } from "jsonwebtoken";
-import { sendEmail } from "../mail";
+import { sendEmail } from "../mail.ts";
 
 const router = Router();
 
